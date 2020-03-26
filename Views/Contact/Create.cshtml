@@ -1,0 +1,80 @@
+﻿@model WMN.Models.Contact
+
+@{
+    ViewData["Title"] = "Contact";
+}
+
+<div class="contained">
+    <center>
+        <div class="col-md-5 col-md-push-1 animate-box">
+
+            <div class="fh5co-contact-info">
+                <h3>Contact Information</h3>
+                <p>
+                    <div class="row">
+                        <div class="icspa">
+                            <a href="tel://6135625731"><img src="~/icons/mobile-phone.png" alt="Phone icon" width="40" height="40"></a>
+                        </div>
+                        <div class="icspa">
+                            <a href="mailto:wmn.telfer@gmail.com"><img src="~/icons/email.png" alt="Email icon" width="40" height="40"></a>
+                        </div>
+                        <div class="icspa">
+                            <a href="https://www.facebook.com/telferwmn/"><img src="~/icons/facebook.png" alt="Facebook icon" width="40" height="40"></a>
+                        </div>
+                        <div class="icspa">
+                            <a href="https://www.instagram.com/telferwmn/"><img src="~/icons/instagram.png" alt="Instagram icon" width="40" height="40"></a>
+                        </div>
+                    </div>
+                </p>
+                <p>Visit us at:</p>
+                <br><a href="https://www.google.com/maps?client=safari&rls=en&q=55+Laurier+Avenue+East,+Ottawa,+Ontario,+K1N+6N5,+Canada&oe=UTF-8&um=1&ie=UTF-8&sa=X&ved=2ahUKEwj8u_Lww7vnAhViAp0JHStBAisQ_AUoAXoECA4QAw">55 Laurier Avenue East, Ottawa, Ontario, K1N 6N5, Canada</a>
+            </div>
+        </div>
+        <div class="smallbox">
+            <div class="col-mid-6 animate-box">
+                <h3> Get In Touch</h3>
+                <h2>Ask Us Any Questions</h2>
+                <form asp-action="Create">
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label asp-for="FirstName" class="control-label"></label>
+                            <input asp-for="FirstName" class="form control" placeholder="Your firstname" />
+                            <span asp-validation-for="FirstName" class="text-danger"></span>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label asp-for="LastName" class="control-label"></label>
+                            <input asp-for="LastName" class="form control" placeholder="Your lastname" />
+                            <span asp-validation-for="LastName" class="text-danger"></span>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label asp-for="Email" class="control-label"></label>
+                            <input asp-for="Email" class="form control" placeholder="Your email" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label asp-for="Subject" class="control-label"></label>
+                            <input asp-for="Subject" class="form control" placeholder="Your subject of this message" />
+                            <span asp-validation-for="Subject" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-12">
+                            <label asp-for="Message" class="control-label"></label>
+                            <textarea asp-for="Message" cols="22" rows="10" class="form-control" placeholder="Say something about us"></textarea>
+                            <span asp-validation-for="Message" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Create" class="button-submit" />
+                        </div>
+                        @{ 
+                            if (ViewData["ContactSuccess"] != null && (bool) ViewData["ContactSuccess"])
+                            {
+                                <div>
+                                    <span>Successfully submitted your message!</span>
+                                </div>
+                            }
+                        }
+                    </div>
+                </form>
+            </div>
+        </div>
+    </center>
+</div>

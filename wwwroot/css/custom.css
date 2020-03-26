@@ -1,0 +1,188 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #ffcccc
+}
+
+h1 {
+    text-align: center;
+    color: rgb(0,0,0);
+    font-family: 'Pacifico', sans-serif;
+    font-size: 300%;
+}
+
+.about {
+    text-align: center;
+    color: rgb(0,0,0);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 200%;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(151,125,176);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 100%;
+}
+
+h3 {
+    text-align: center;
+    color: rgb(86,85,86);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 100%;
+}
+
+h4 {
+    color: rgb(0,0,0);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 150%;
+}
+
+h5 {
+    color: rgba(46, 49, 49, 1);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 80%;
+}
+
+.role {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+img {
+    background: transparent;
+}
+
+p {
+    color: rgb(0,0,0);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 100%;
+}
+
+
+li, a, button {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(0,0,0);
+    text-decoration: none
+}
+
+.icspa {
+    display: inline-block;
+    margin: 5px 20px;
+    padding: 10px;
+}
+
+.logo {
+    cursor: pointer
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgb(151, 125, 176);
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s
+}
+
+.contained {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60em;
+}
+
+.row ::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.imsize {
+    width: 100%;
+}
+
+.crop {
+    width: 200px;
+    height: 150px;
+    overflow: hidden;
+}
+
+    .crop img {
+        width: 400px;
+        height: 300px;
+        margin: -75px 0 0 -100px;
+    }
+
+.smallbox {
+    width: 300px;
+    border: 15px solid white;
+    padding: 50px;
+    margin: 20px;
+}
+
+label {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.central {
+    text-align: center;
+}
+
+.icspa {
+    display: inline-block;
+    margin: 5px 20px;
+    padding: 10px;
+}
+
+.smallbox {
+    width: 500px;
+    border: 15px solid white;
+    padding: 50px;
+    margin: 20px;
+}
+
+.leung {
+    margin: 10px
+}
+
+.one {
+    width: 50%;
+    float: left;
+}
+
+.two {
+    width: 50%;
+    float: left;
+    border-style: solid;
+    border-width: 2px;
+    padding: 35px;
+}
+
+.textwrap {
+    float: right;
+    margin: 10px;
+}
+
+.button-submit {
+    padding: 9px 25px;
+    background-color: rgb(151, 125, 176);
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s
+}

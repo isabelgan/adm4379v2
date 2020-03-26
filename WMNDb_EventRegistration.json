@@ -1,0 +1,5 @@
+{"_id":{"$oid":"5e644c6723961310270b891a"},"FirstName":"Lee","LastName":"Bee","Email":"lee@gmail.com","YearOfStudy":"4","Program":"misa"}
+{"_id":{"$oid":"5e644dc883c5723af89e5c62"},"FirstName":"Test","LastName":"Test","Email":"test@gmail.com","YearOfStudy":"4","Program":"misa"}
+{"_id":{"$oid":"5e644dce83c5723af89e5c63"},"FirstName":"Tim","LastName":"Cook","Email":"cook@gmail.com","YearOfStudy":"3","Program":"finance"}
+{"_id":{"$oid":"5e644ee7c12c2c57782f847b"},"FirstName":"Isabel","LastName":"Gan","Email":"gan@gmail.com","YearOfStudy":"1","Program":"finance"}
+{"_id":{"$oid":"5e655eb8a7e0dc331c704794"},"FirstName":"Joe","LastName":"Doe","Email":"testemail@gmail.com","YearOfStudy":"2","Program":"finance"}
